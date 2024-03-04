@@ -26,7 +26,7 @@ public class FlatFiles {
             String size = line.substring(0, 10).trim();
             String id = line.substring(10, 20).trim();
             String toppings = line.substring(20, 40).trim();
-            String price = line.substring(40, 60);
+            String price = line.substring(0, 10);
             return new Pizza(size, id, toppings, price);
         }
     }
